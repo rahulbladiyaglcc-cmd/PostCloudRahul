@@ -1,0 +1,86 @@
+html {
+  .bg-success {
+    color: white !important;
+  }
+}
+
+.v-row + .v-row {
+  margin-top: 0px;
+}
+
+.v-divider {
+  opacity: 1;
+  border-color: rgba(var(--v-theme-borderLight), 0.36);
+}
+
+.v-selection-control {
+  flex: unset;
+}
+
+.customizer-btn .icon {
+  animation: progress-circular-rotate 1.4s linear infinite;
+  transform-origin: center center;
+  transition: all 0.2s ease-in-out;
+}
+
+.no-spacer {
+  .v-list-item__spacer {
+    display: none !important;
+  }
+}
+
+@keyframes progress-circular-rotate {
+  100% {
+    transform: rotate(270deg);
+  }
+}
+
+.snackbar-container {
+  border-radius: 8px;
+  padding: 8px;
+}
+
+.error-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.error-item {
+  padding: 10px 15px;
+  margin-bottom: 8px;
+  font-weight: bold;
+  border-radius: 4px;
+  transition:
+    background-color 0.3s ease,
+    border-left-color 0.3s ease,
+    color 0.3s ease;
+
+  &.error {
+    background-color: rgba(var(--v-theme-lighterror), 1); /* Light error background */
+    border-left: 5px solid rgba(var(--v-theme-error), 1); /* Error border */
+    color: rgba(var(--v-theme-on-lighterror), 1); /* Matching text color */
+  }
+
+  &.success {
+    background-color: rgba(var(--v-theme-lightsuccess), 1); /* Light success background */
+    border-left: 5px solid rgba(var(--v-theme-success), 1); /* Success border */
+    color: rgba(var(--v-theme-on-lightsuccess), 1); /* Matching text color */
+  }
+
+  &.info {
+    background-color: rgba(var(--v-theme-lightprimary), 1); /* Light info background */
+    border-left: 5px solid rgba(var(--v-theme-info), 1); /* Info border */
+    color: rgba(var(--v-theme-on-lightprimary), 1); /* Matching text color */
+  }
+
+  &.warning {
+    background-color: rgba(var(--v-theme-lightwarning), 1); /* Light warning background */
+    border-left: 5px solid rgba(var(--v-theme-warning), 1); /* Warning border */
+    color: rgba(var(--v-theme-on-lightwarning), 1); /* Matching text color */
+  }
+
+  &:hover {
+    filter: brightness(1.1); /* Slight hover highlight */
+  }
+}

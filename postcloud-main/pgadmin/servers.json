@@ -1,0 +1,14 @@
+{
+  "Servers": {
+    "1": {
+      "Name": "Posta Cloud DB",
+      "Group": "Servers",
+      "Host": "postgres_db",
+      "Port": 5432,
+      "MaintenanceDB": "postgres",
+      "Username": "posta_cloud_db",
+      "Password": "posta_cloud123",
+      "SSLMode": "prefer"
+    }
+  }
+}
